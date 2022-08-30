@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  --font-base: 'Montserrat', Arial, Helvetica, sans-serif;
+
+  --color-primary: #296DC1;
+  --color-secondary: #00A82D;
+
+  --color-focus: #4892EC;
+  --color-warning: #E86880;
+  --color-background: #F2F5F9;
+  --color-form-button: rgba(41, 109, 193, 0.5);
+
+  --color-font-primary: #000;
+  --color-font-secondary: #fff;
+  --color-border: #DEDEDE;
+
+  --color-footer-text: #7C828B;
+  --color-popup-background: #A8AFBB;
+  
+  --color-form-button: rgba(41, 109, 193, 0.5);
+  --color-overlay: rgba(40, 40, 40, 0.4);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-base);
+  overflow-x: hidden;
+  background-color: #f6f7ef;
+}
+
+p {
+  font-family: var(--font-base);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+  color: var(--color-font-primary);
+}
+
+button {
+  font-family: var(--font-base);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-font-secondary);
+  background-color: var(--color-primary);
+  border: none;
+  cursor: pointer;
+}
+
+input, 
+textarea {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+  color: var(--color-font-primary);
+  border: 1px solid var(--color-focus);
+}
+
+textarea { 
+  resize: vertical;
+  min-height: 85px;
+  max-height: 125px;
+}
+
+h2 {
+  font-family: var(--font-base);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--color-font-primary);
+  margin-bottom: 10px;
+}
+
+button:disabled,
+button:disabled:hover {
+  cursor: no-drop;
 }
